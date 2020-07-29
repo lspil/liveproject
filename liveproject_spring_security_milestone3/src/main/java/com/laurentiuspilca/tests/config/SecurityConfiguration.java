@@ -1,4 +1,4 @@
-package com.laurentiuspilca.liveproject_spring_security_milestone3.config;
+package com.laurentiuspilca.tests.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

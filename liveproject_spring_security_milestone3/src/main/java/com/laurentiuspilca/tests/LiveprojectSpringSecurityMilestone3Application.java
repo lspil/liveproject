@@ -1,4 +1,4 @@
-package com.laurentiuspilca.liveproject_spring_security_milestone3;
+package com.laurentiuspilca.tests;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.laurentiuspilca.liveproject_spring_security_milestone3.config;
+package com.laurentiuspilca.tests.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -16,10 +16,10 @@ public class GatewayConfiguration {
   public RouteLocator myRoutes(RouteLocatorBuilder builder) {
     return builder.routes()
             .route(p -> p
-                    .path("/metric")
+                    .path("/metric/**")
                     .uri(businessLogicServerURL + "/metric"))
             .route(p -> p
-                    .path("/profile")
+                    .path("/profile/**")
                     .uri(businessLogicServerURL + "/profile"))
             .build();
   }

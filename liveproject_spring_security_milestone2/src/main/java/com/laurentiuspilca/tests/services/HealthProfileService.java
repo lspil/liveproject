@@ -7,10 +7,12 @@ import com.laurentiuspilca.tests.repositories.HealthProfileRepository;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 @Service
+@Transactional
 public class HealthProfileService {
 
   private final HealthProfileRepository healthProfileRepository;

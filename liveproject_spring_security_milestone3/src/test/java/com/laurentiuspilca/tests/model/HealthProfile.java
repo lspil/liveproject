@@ -1,23 +1,14 @@
-package com.laurentiuspilca.tests.entities;
+package com.laurentiuspilca.tests.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
-@Entity
-@Table(name = "health_profile")
 public class HealthProfile {
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
 
   private String username;
 
-  @OneToMany(mappedBy = "profile", cascade = CascadeType.REMOVE)
-  @JsonIgnore
   private List<HealthMetric> metrics;
 
   public int getId() {
@@ -55,14 +46,5 @@ public class HealthProfile {
   @Override
   public int hashCode() {
     return Objects.hash(id);
-  }
-
-  @Override
-  public String toString() {
-    return "HealthProfile{" +
-            "id=" + id +
-            ", username='" + username + '\'' +
-            ", metrics=" + metrics +
-            '}';
   }
 }
