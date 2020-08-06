@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.laurentiuspilca</groupId>
     <artifactId>liveproject_spring_security_milestone1</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>liveproject_spring_security_milestone1</name>
     <description>Live Project - Spring Security - Milestone 1 - Implementing an authorization server</description>
 

@@ -10,9 +10,9 @@
     </parent>
     <groupId>com.laurentiuspilca</groupId>
     <artifactId>liveproject_spring_security_milestone3</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>liveproject_spring_security_milestone3</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Live Project - Spring Security - Milestone 3 - Implementing a gateway service</description>
 
     <properties>
         <java.version>11</java.version>
