@@ -15,6 +15,7 @@ public class HealthMetric {
 
   private double value;
 
+  @Enumerated(EnumType.STRING)
   private HealthMetricType type;
 
   @ManyToOne
